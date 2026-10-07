@@ -41,11 +41,14 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.hilt.navigation.compose)
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.gson)
+    implementation(libs.kotlinx.coroutines.android)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.hilt.android)
-    implementation(libs.navigation.compose)
     ksp(libs.hilt.compiler)
     implementation(libs.androidx.navigation.compose)
     implementation(platform(libs.androidx.compose.bom))
